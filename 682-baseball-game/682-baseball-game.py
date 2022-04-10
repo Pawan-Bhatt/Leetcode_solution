@@ -5,9 +5,9 @@ class Solution:
             if ops[i]=="C":
                 ary.pop()
             elif ops[i]=="D":
-                ary.append(ary[len(ary)-1]*2)
+                ary.append(ary[-1]*2)
             elif ops[i]=="+":
-                ary.append(ary[len(ary)-1]+ary[len(ary)-2])
+                ary.append(ary[-1]+ary[-2])
             else:
                 ary.append(int(ops[i]))
         return sum(ary)
