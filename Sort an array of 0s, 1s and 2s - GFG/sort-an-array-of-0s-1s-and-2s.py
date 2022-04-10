@@ -25,7 +25,7 @@ class Solution:
             arr[i] = 2
             i+=1
             two-=1
-        return 
+        return arr
         # code here
 
 
