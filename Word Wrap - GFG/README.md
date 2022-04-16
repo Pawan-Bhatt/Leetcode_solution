@@ -1,5 +1,5 @@
 # Word Wrap
-## Medium 
+##  Medium 
 <div class="problem-statement">
                 <p></p><div class="row bottom">
 <div class="col-xs-12 textAlign">
