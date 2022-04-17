@@ -5,19 +5,9 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def increasingBST(self, root: TreeNode) -> TreeNode:
-        def inorder(rt: Optional[TreeNode], node: TreeNode) -> TreeNode:
-            if rt is not None:
-                node = inorder(rt.left, node)
-
-                node.right = TreeNode(val=rt.val)
-                node = node.right
-
-                node = inorder(rt.right, node)
-
-            return node
-
-        dummy_node = TreeNode()
-        inorder(root, dummy_node)
-
-        return dummy_node.right
+    def increasingBST(self, root, tail = None):
+        if root == None : return tail
+        res = self.increasingBST(root.left, root)
+        root.left = None
+        root.right = self.increasingBST(root.right, tail)
+        return res
