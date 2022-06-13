@@ -1,8 +1,10 @@
 class Solution:
-    def minimumTotal(self, a: List[List[int]]) -> int:
-        n=len(a)
-        dp=[[0] * (n+1) for _ in range(n+1)]
-        for level in range(n-1,-1,-1):
-            for i in range(level+1):
-                dp[level][i]=a[level][i] + min(dp[level+1][i], dp[level+1][i+1])
-        return dp[0][0] 
+    def minimumTotal(self, triangle: List[List[int]]) -> int:
+        for idx_row in range(1, len(triangle)):
+            triangle[idx_row][0] += triangle[idx_row-1][0]
+            triangle[idx_row][-1] += triangle[idx_row-1][-1]
+            for i in range(1, len(triangle[idx_row-1])):
+                triangle[idx_row][i] += min(triangle[idx_row-1][i-1], triangle[idx_row-1][i])
+        
+        return min(triangle[-1])
+                
