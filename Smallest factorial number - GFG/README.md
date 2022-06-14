@@ -1,5 +1,5 @@
 # Smallest factorial number
-## Easy 
+##  Easy 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given a number&nbsp;<strong>n</strong>. The task is to find the smallest number whose factorial contains at least n trailing zeroes.</span></p>
 
