@@ -1,8 +1,6 @@
 class Solution:
     def decode(self, encoded: List[int], first: int) -> List[int]:
-        ans = [first]
-        j = 0
-        for i in encoded:
-            ans.append(i ^ ans[j])
-            j += 1
-        return ans
+        arr = [first]
+        for n in encoded:
+            arr.append(arr[-1] ^ n) # getting XOR
+        return arr
