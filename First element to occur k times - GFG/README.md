@@ -15,8 +15,8 @@ Both 7 and 4 occur 2 times.
 But 4 is first that occurs 2 times
 As at <strong>index = 4</strong>, 4 has occurred 
 atleast 2 times whereas at <strong>index = 6</strong>,
-7 has occurred atleast 2 times.</span>
-</pre>
+7 has occurred atleast 2 times.
+</span></pre>
 
 <p>&nbsp;</p>
 
@@ -27,6 +27,7 @@ You don't need to read input or print anything. Your task is to complete the fun
 <strong>Expected Auxiliary Space:</strong> O(N)</span></p>
 
 <p><span style="font-size:18px"><strong>Constraints:</strong><br>
-1 &lt;= N, K &lt;= 10<sup>5</sup><br>
-1&lt;= A &lt;= 10<sup>6</sup></span></p>
+1 &lt;= <strong>N</strong> &lt;= 10<sup>4</sup><br>
+1 &lt;= <strong>K</strong> &lt;= 100<br>
+1&lt;= <strong>A[i]</strong> &lt;= 200</span></p>
 </div>
