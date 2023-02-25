@@ -3,20 +3,18 @@
 
 class Solution:
     def firstElementKTime(self,  a, n, k):
-        dictionary = {}
-        
-        if (k == 1):
-            return a[0]
-        for index, value in enumerate(a):
-            if value not in dictionary:
-                dictionary[value] = 1
- 
-            else:
-                dictionary[value] += 1
-                if dictionary[value] == k:
-                    return value
-                    
+        dict = {}
+        for i in a :
+            if i in dict:
+                dict[i] = dict[i] + 1 
+                if dict[i] == k :
+                    return i
+            else :
+                dict[i] = 1
+                if dict[i] == k:
+                    return i
         return -1
+        # code here
     
 
 
